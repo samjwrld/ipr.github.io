@@ -1,0 +1,134 @@
+.footer{
+    p{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: $gray-1;
+        margin-bottom: 30px;
+    }    
+    .social-link{
+        display: inline-flex;
+        align-items: center;
+        justify-content: left;
+        padding: 16px 24px;   
+        background: $black;
+        border: 1px solid $black;
+        box-shadow: 24px 24px 10px rgba(24, 25, 27, 0.01), 15px 15px 9px rgba(24, 25, 27, 0.09), 9px 9px 7px rgba(24, 25, 27, 0.3), 4px 4px 5px rgba(24, 25, 27, 0.51), 1px 1px 3px rgba(24, 25, 27, 0.59), 0px 0px 0px rgba(24, 25, 27, 0.6);
+        border-radius: 10px;
+        li{
+            padding-right: 32px;
+            &:last-child{
+                padding: 0;
+            }
+            a{
+                font-size: 32px;
+                color: $gray-2;
+                &:hover{
+                    color: $accent-1;
+                }
+            }
+        }
+    }
+    h2{
+        font-family: $font-sec;
+        font-weight: 500;
+        font-size: 39px;
+        line-height: 120%;
+        color: $white;
+        margin-bottom: 24px;
+        @include media-query(1399px) {
+            font-size: 32px;
+        }
+    }
+    .footer-link{
+        ul{
+            li{
+                margin-bottom: 16px;
+                a{
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 150%;
+                    letter-spacing: 0.02em;
+                    color: $white;
+                    &.active,
+                    &:hover{
+                        color: $accent-1;
+                    }
+                }
+            }
+        }
+    }
+    .contact-block{
+        h5{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: $white;
+            margin-bottom: 8px;
+        }
+        p{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: $gray-2;
+            margin-bottom: 12px;
+        }
+        span{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: $white;
+            display: block;
+            a{
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+                text-transform: capitalize;
+                background: radial-gradient(100% 2129.21% at 0% 50%, #CBA473 0%, #C98229 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                margin-left: 8px;
+                margin-bottom: 12px;
+            }
+            &:last-child{
+                a{
+                    font-size: 20px;
+                    background: radial-gradient(100% 2129.21% at 0% 50%, $gray-2 0%, $gray-2 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    @include media-query(1199px) {
+                        font-size: 18px;
+                    }
+
+                    &:hover{
+                        background: radial-gradient(100% 2129.21% at 0% 50%, #CBA473 0%, #C98229 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+
+                    }
+                }
+            }
+        }
+    }
+    .copyright-text{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: $gray-2;
+        text-align: center;
+        padding-top: 12px;
+
+    }
+}

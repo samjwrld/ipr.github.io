@@ -1,0 +1,137 @@
+/*---------------------------------------------"
+Template Name: Law Firm
+Template URL: https://techpedia.co.uk/template/law-firm
+Description: Law Firm
+Version: 1.0.0
+
+===============================================   
+STYLE SHEET INDEXING
+|
+|___ Fonts
+|___ Variables
+|___ Reset Styles
+|___ Responsive
+|___ Spacing
+|___ Helper Classes
+|___ Buttons
+|___ Headings
+|___ Layout Styles
+|___ END STYLE SHEET INDEXING
+
+--------------------------------------------*/
+
+/*-------------------------
+    Fonts
+-------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+/*-------------------------
+    Variables
+-------------------------*/
+$accent-1: #C09969;
+$accent-2: #C09969;
+$accent-3:  radial-gradient(100% 2129.21% at 0% 50%, #CBA473 0%, #C98229 100%);;
+$gradient: linear-gradient(126.72deg, #DAA75E 15.38%, #F1DAB0 113.06%);
+$font-primary: 'Lato', sans-serif;
+$font-sec: 'Playfair Display', serif;
+$font-awesome: "Font Awesome 5 Pro";
+$transition: all 0.5s ease-in-out;
+$black: #00262E;
+$black-1: #0B4167;
+$black-2: #0D0D0D;
+$white: #FAFAFA;
+$gray-1: #F0F2F4;
+$gray-2: #D6D8DB;
+$gray-3: #AFB1B6;
+$gray-4: #797D86;
+$bg: linear-gradient(180deg, #0B4167 4.71%, #00262E 94.32%);
+$inverse-bg: linear-gradient(180deg, #00262E 4.69%, #0B4167 94.32%);
+$font-95: 95px;
+$font-76: 76px;
+$font-61: 61px;
+$font-49: 49px;
+$font-39: 39px;
+$font-31: 31px;
+$font-25: 25px;
+$font-20: 20px;
+$font-16: 16px;
+$font-13: 13px;
+
+.img{
+  background: url(../media/cases/img-1.png);
+}
+/*-------------------------
+    Responsive
+-------------------------*/
+@import "helpers/mixins";
+
+/*-------------------------
+    Reset Styles
+-------------------------*/
+@import "basic/basic";
+ 
+/*-------------------------
+    Spacing
+-------------------------*/
+@import "helpers/spacing";
+
+/*-------------------------
+    Helper Classes
+-------------------------*/
+@import "helpers/classes";
+
+/*-------------------------
+  Buttons
+-------------------------*/
+@import "elements/buttons";
+
+/*-------------------------
+  Element
+-------------------------*/
+@import "elements/search-input";
+
+/*-------------------------
+  Popup
+-------------------------*/
+@import "elements/popup";
+
+/*-------------------------
+  Countdown
+-------------------------*/
+@import "elements/countdown";
+
+/*-------------------------
+  Headings
+-------------------------*/
+@import "elements/heading";
+
+/*-------------------------
+  Preloader Styles
+-------------------------*/
+@import "layout/preloader";
+
+@import "layout/header";
+
+@import "layout/footer";
+
+@import "layout/banner";
+
+@import "layout/inner-banner";
+
+@import "layout/about";
+
+@import "layout/service";
+
+@import "layout/expertise";
+
+@import "layout/cases";
+
+@import "layout/client";
+
+@import "layout/blog";
+
+@import "layout/contact";
+
+
+
+

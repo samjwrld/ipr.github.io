@@ -1,0 +1,46 @@
+.inner-banner{
+    img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    .title{
+        position: relative;
+        display: inline-block;
+        padding: 0 64px;
+        &::before{
+            width: 10%;
+            height: 2px;
+            background: $gradient;
+            position: absolute;
+            content: '';
+            left: 0;
+            top: calc(50% - 1px);
+        }
+        &::after{
+            width: 10%;
+            height: 2px;
+            background: $gradient;
+            position: absolute;
+            content: '';
+            right: 0;
+            top: calc(50% - 1px);
+        }
+        h2{
+            padding: 0 32px;
+            display: inline-block;
+            font-weight: 600;
+            line-height: 130%;
+            background: radial-gradient(100% 2129.21% at 0% 50%, #CBA473 0%, #C98229 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin: 0;
+            @include media-query(490px) {
+                padding: 0;
+            }
+
+        }
+    }
+}
