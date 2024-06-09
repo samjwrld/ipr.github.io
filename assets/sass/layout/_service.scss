@@ -1,56 +1,71 @@
-.service{
-    .service-block{
-        margin-bottom: 24px;
-        padding: 64px 32px;
-        background: $black;
-        box-shadow: 24px 24px 10px rgba(24, 25, 27, 0.01), 15px 15px 9px rgba(24, 25, 27, 0.09), 9px 9px 7px rgba(24, 25, 27, 0.3), 4px 4px 5px rgba(24, 25, 27, 0.51), 1px 1px 3px rgba(24, 25, 27, 0.59), 0px 0px 0px rgba(24, 25, 27, 0.6);
-        border-radius: 15px;
-        text-align: center;
-        .icon-image{
-            margin-bottom: 12px;
-        }
-        h4{
-            font-weight: 700;
-            line-height: 140%;
-            letter-spacing: 0.02em;
-            text-transform: capitalize;
-            background: radial-gradient(100% 2129.21% at 0% 50%, #CBA473 0%, #C98229 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-            margin-bottom: 8px;
-            @include short-query(1399px , 1699px) {
-                font-size: 23px;
-            }
-            @include media-query(1199px) {
-                font-size: 31px;
-            }
-            @include media-query(490px) {
-                font-size: 24px;
-            }
+.service {
+  .service-block {
+    margin-bottom: 24px;
+    padding: 64px 32px;
+    background: $black;
+    box-shadow: 24px 24px 10px rgba(24, 25, 27, 0.01), 15px 15px 9px rgba(24, 25, 27, 0.09), 9px 9px 7px rgba(24, 25, 27, 0.3), 4px 4px 5px rgba(24, 25, 27, 0.51), 1px 1px 3px rgba(24, 25, 27, 0.59), 0px 0px 0px rgba(24, 25, 27, 0.6);
+    border-radius: 15px;
+    text-align: center;
 
-
-        }
-        p{
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 150%;
-            text-align: center;
-            letter-spacing: 0.02em;
-            color: $gray-2;
-            margin-bottom: 24px;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            line-clamp: 4; 
-            -webkit-box-orient: vertical;
-            @include short-query(1399px , 1699px) {
-                -webkit-line-clamp: 2;
-                        line-clamp: 2; 
-            }
-
-
-        }
+    .icon-image {
+      margin-bottom: 12px;
     }
+
+    h4 {
+      font-weight: 700;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      background: radial-gradient(100% 2129.21% at 0% 50%, #CBA473 0%, #C98229 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 8px;
+
+      @include short-query(1399px, 1699px) {
+        font-size: 23px;
+      }
+
+      @include media-query(1199px) {
+        font-size: 31px;
+      }
+
+      @include media-query(490px) {
+        font-size: 24px;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: $gray-2;
+      margin-bottom: 24px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      line-clamp: 4;
+      -webkit-box-orient: vertical;
+
+      @include short-query(1399px, 1699px) {
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+      }
+    }
+
+    .service-offerings {  /* Uncomment these lines */
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .service-offerings h4 {
+      margin: 5px;
+    }
+  }
 }
